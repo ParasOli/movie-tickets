@@ -1,0 +1,87 @@
+/* Signin.module.css */
+
+
+.authout {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+  .authin {
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    width: 40%;
+    margin: auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+  }
+
+
+  
+  .img {
+    width: 150px;
+    height: 150px;
+
+  }
+  
+  .right {
+    margin-top: 20px;
+  }
+  
+  .forminput_cont {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100%;
+  
+  }
+  
+
+  .formerror {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .main_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .main_button:hover {
+    background-color: #45a049;
+  }
+  
+  .authlink {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .authlink a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .authlink a:hover {
+    text-decoration: underline;
+  }
