@@ -95,6 +95,7 @@ const Navbar = () => {
                         </Link>
 
                }
+            
                 <Link href="/profile" className='linkstylenone'>
                     <BiUserCircle className='theme_icon1' />
                 </Link>
