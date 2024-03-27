@@ -59,7 +59,7 @@
   }
   
   .main_button {
-    background-color: #4CAF50;
+    background-color: var(--col1);
     color: white;
     padding: 10px 20px;
     border: none;

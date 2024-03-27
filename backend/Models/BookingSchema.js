@@ -21,7 +21,7 @@ const bookingSchema = new mongoose.Schema({
     },
     seats: [
         {
-            // { row: 'D', col: 0, seat_id: '10', price: 300 }
+            
 
             row: {
                 type: String,

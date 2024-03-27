@@ -1,27 +1,37 @@
-.navbar{
+/* Navbar.css */
+
+.navbar {
+    background-color: #333333; /* Set dark background color */
+    padding: 20px; /* Add padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    border-bottom: 1px solid #eaeaea;
-
-}
-
-
-.navbar .logo{
-margin: 10px;
-}
-
-.navbar a{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  .logo {
+    cursor: pointer; /* Add cursor pointer to logo */
+  }
+  
+  .adminlinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .adminlinks a {
     text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    margin: 0 10px;
-}
-
-.navbar a:hover{
-    background-color: #000;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-}
+    color: #ffffff; /* Set link color to white */
+    padding: 10px 15px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    background-color: #555555; /* Set dark background color for links */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  .adminlinks a:hover {
+    background-color: #777777; /* Change background color on hover */
+  }
+  
+  .adminlinks a:first-child {
+    margin-left: auto; /* Move first link to the right */
+  }
+  

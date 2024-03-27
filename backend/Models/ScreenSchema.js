@@ -18,14 +18,14 @@ const screenSchema = new mongoose.Schema({
         required: true
     },
     screenType: {
-        type: String, // Example: "Standard", "IMAX", "VIP", etc.
+        type: String, 
         required: true
     },
     movieSchedules: [
         {
             movieId: {
                 type: mongoose.Schema.Types.ObjectId,
-                ref: 'Movie', // Reference to the Movie model
+                ref: 'Movie', 
                 required: true
             },
             showTime: String,

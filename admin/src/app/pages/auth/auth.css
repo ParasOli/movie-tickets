@@ -45,12 +45,12 @@
     background-color: #0056b3;
   }
   
-  /* Optional: Center align the form */
+
   .formpage {
     text-align: center;
   }
   
-  /* Optional: Adjust form margin on smaller screens */
+
   @media (max-width: 480px) {
     .formpage {
       margin: 20px auto;

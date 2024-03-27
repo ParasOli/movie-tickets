@@ -38,7 +38,7 @@ const Navbar = () => {
     }, []);
     return (
         <div className='navbar'>
-            <Image src={logo} alt="Logo" width={100} className='logo' />
+            <Image src={logo} alt="Logo" width={65} className='logo' />
 
             <div className='adminlinks'>
                 {isAdminAuthenticated ? (

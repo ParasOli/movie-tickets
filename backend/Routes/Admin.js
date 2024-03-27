@@ -35,7 +35,7 @@ router.post('/register', async (req, res, next) => {
             password
         });
 
-        await newAdmin.save(); // Await the save operation
+        await newAdmin.save(); 
 
         res.status(201).json(createResponse(true, 'Admin registered successfully'));
     } catch (err) {

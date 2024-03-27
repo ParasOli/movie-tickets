@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import frontpage from '@/assets/sliderTemp/frontpage.png'
+import frontpage from '@/assets/sliderTemp/frontpage.png';
+import frontpage2 from '@/assets/sliderTemp/main1.jpg'
+import frontpage3 from '@/assets/sliderTemp/main.jpg'
+import './homeslider.css'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay, EffectFade } from 'swiper/modules';
 
 const HomeSlider = () => {
     const [width, setWidth] = useState(0);
     const [height, setHeight] = useState(0);
 
     useEffect(() => {
-        // Run this code only in the client-side
         if (typeof window !== 'undefined') {
             setWidth(window.innerWidth);
             setHeight(window.innerHeight);
@@ -26,7 +28,11 @@ const HomeSlider = () => {
             imgUrl: frontpage
         },
         {
-            imgUrl: 'https://assets-in.bmscdn.com/promotions/cms/creatives/1693472198837_iccdesktop.jpg'
+            imgUrl: frontpage2
+        },
+    
+        {
+            imgUrl: frontpage3
         }
     ];
 
@@ -37,12 +43,15 @@ const HomeSlider = () => {
             pagination={true}
             mousewheel={true}
             keyboard={true}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+            autoplay={{ delay: 2000 }} 
+            effect="fade" 
+            fadeEffect={{ crossFade: true }}
             className="mySwiper"
         >
             {banners.map((banner, index) => (
                 <SwiperSlide key={index}>
-                    <Image src={banner.imgUrl} alt="" width={width} height={height / 2} style={{ objectFit: "cover" }} />
+                    <Image className='image' src={banner.imgUrl} alt="" width={width} height={100} style={{ objectFit: "cover" }} />
                 </SwiperSlide>
             ))}
         </Swiper>

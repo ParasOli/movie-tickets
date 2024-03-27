@@ -34,7 +34,7 @@ const Navbar = () => {
             .catch((error) => {
                 console.log(error)
             })
-
+            
     }
 
     const handleLogout = async () => {
@@ -61,6 +61,7 @@ const Navbar = () => {
                 window.location.href = "/auth/signin"
 
             })
+            
     }
 
    
@@ -68,7 +69,7 @@ const Navbar = () => {
     React.useEffect(() => {
       
         getuser()
-    }, [])
+    }, )
     return (
         <nav>
             <div className='left'>
@@ -96,9 +97,18 @@ const Navbar = () => {
 
                }
             
-                <Link href="/profile" className='linkstylenone'>
+                
+
+                 {
+                    loggedIn?
+                    <Link href="/profile" className='linkstylenone'>
                     <BiUserCircle className='theme_icon1' />
                 </Link>
+                :
+                <h1>o</h1>
+                 }
+                
+                
             </div>
             {
                 showLocationPopup &&

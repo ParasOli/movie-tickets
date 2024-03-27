@@ -135,6 +135,7 @@ const router = useRouter()
                         <button type="submit" className="main_button">
                             Login
                         </button>
+                        
 
                         <p className="authlink">
                             Don&apos;t have an account? <Link href="/auth/signup">Register</Link>
